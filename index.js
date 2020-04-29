@@ -1,7 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 var userRoutes = require('./routes/user.route');
+var authRoutes = require('./routes/auth.route');
 var cookieParser = require('cookie-parser');
+
+var authMiddleware = require("./middiewares/auth.middieware");
+
 const port = 3000;
 const app = express();
 app.set("view engine", "pug");
@@ -17,7 +21,8 @@ app.get("/", function (req, res) {
   });
 });
 
-app.use('/users',userRoutes);
+app.use('/users',authMiddleware.requireAuth, userRoutes);
+app.use('/auth', authRoutes);
 
 app.listen(port, function () {
   console.log("Server listing on port", port);
