@@ -744,5 +744,21 @@
       "description": "tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse",
       "price": 649483
     }
+  ],
+  "sessions": [
+    {
+      "id": "le_tfDv07"
+    },
+    {
+      "id": "wwaTtc_BR",
+      "cart": {
+        "2eb20573-419d-441b-bf3f-77b3786b1dc8": 4,
+        "faab5d2e-f15a-4ace-9573-334731b51ff4": 5,
+        "c9173bc0-426c-421f-9983-cf47cea70912": 1,
+        "929257db-0a54-4455-8d24-9dafd29e1853": 1,
+        "2cb75eb4-60b5-4c66-b27b-b3fca627bb64": 1,
+        "1043f45f-0671-4c3e-9d19-909b5e10fe06": 1
+      }
+    }
   ]
 }

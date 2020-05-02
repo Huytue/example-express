@@ -8,11 +8,15 @@ module.exports.index = function (req, res) {
 	var end = page * perPage;
 
 	var drop = (page - 1) * perPage;
+	let sessionId = req.signedCookies.sessionId;
+	res.locals.countCart = db.get("sessions").find({ id: sessionId }).get("cart").size().value();
+
 	res.render("products/index", {
 		products: db.get("products").value().slice(start, end),
 		//products: db.get("products").drop(drop).take(perPage).value(),
 		page: page,
 		start:start,
 		end:end,
+		cart: res.locals.countCart
 	});
 };

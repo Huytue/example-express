@@ -18,7 +18,7 @@ block content
 						p.card-text= product.description
 							p.badge.badge-pill.badge-dark= product.price
 								span &nbsp; VND
-						a.btn.btn-primary(href='#') Add to cart 
+						a.btn.btn-primary(href='/cart/add/' + product.id) Add to cart 
 
 	nav(aria-label='Page navigation example')
 		ul.pagination
