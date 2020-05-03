@@ -22,10 +22,12 @@ block content
 
 	nav(aria-label='Page navigation example')
 		ul.pagination
-			li.page-item
-			a.page-link(href='?page='+(page < 1?(page - 1): 1)) Previous
+			if page > 1
+				li.page-item
+				a.page-link(href='?page='+(page - 1)) Previous
 			while temp++ < totalPage
 				li.page-item
 				a.page-link(href='?page='+ temp)= temp
-			li.page-item
-			a.page-link(href='?page='+ (page < totalPage? (page + 1): page)) Next
+			if page < totalPage
+				li.page-item
+				a.page-link(href='?page='+ (page + 1)) Next
