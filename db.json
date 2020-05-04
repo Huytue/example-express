@@ -759,6 +759,17 @@
         "2cb75eb4-60b5-4c66-b27b-b3fca627bb64": 1,
         "1043f45f-0671-4c3e-9d19-909b5e10fe06": 1
       }
+    },
+    {
+      "id": "D737N2qrO"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "ttE-D33Oc",
+      "amount": 400000,
+      "accountId": "123456",
+      "userId": "09wm4X7wF"
     }
   ]
 }
