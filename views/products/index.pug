@@ -25,9 +25,9 @@ block content
 			if page > 1
 				li.page-item
 				a.page-link(href='?page='+(page - 1)) Previous
-			while temp++ < totalPage
+			while start++ < total
 				li.page-item
-				a.page-link(href='?page='+ temp)= temp
-			if page < totalPage
+				a.page-link(href='?page='+ start)= start
+			if page < total
 				li.page-item
 				a.page-link(href='?page='+ (page + 1)) Next
